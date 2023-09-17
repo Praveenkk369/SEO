@@ -1,0 +1,85 @@
+/* Reset some default styles to ensure consistency */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: "Roboto", sans-serif; /* Use the Roboto font */
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #007bff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.results {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.results h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.results p {
+  font-size: 18px;
+  color: #555;
+}

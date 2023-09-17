@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO</title>
+  </head>
+  <body>
+    <h1>SEO</h1>
+
+    <!-- Create a div element with an ID to load the widget -->
+    <div id="widget-container"></div>
+    <div id="root"></div>
+    <!-- Include the JavaScript code to load the widget -->
+    <script>
+      ReactDOM.render(<App />, document.getElementById("root"));
+      // Function to create and load the iframe
+      function loadWidget() {
+        const widgetContainer = document.getElementById("widget-container");
+        const iframe = document.createElement("iframe");
+
+        // Set the source URL of your widget
+        iframe.src = "https://your-widget-server.com/widget"; // Replace with your server URL
+
+        // Customize the dimensions of the iframe
+        iframe.width = "400"; // Set the width in pixels
+        iframe.height = "300"; // Set the height in pixels
+
+        // Add the iframe to the container
+        widgetContainer.appendChild(iframe);
+      }
+
+      // Call the function to load the widget when the page loads
+      window.onload = loadWidget;
+    </script>
+  </body>
+</html>

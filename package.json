@@ -1,0 +1,22 @@
+{
+  "name": "embeddable-widget",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@eslint/eslintrc": "2.0.2",
+    "axios": "^1.5.0",
+    "env": "0.0.2",
+    "eslint-define-config": "1.17.0",
+    "express": "4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^6.0.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
